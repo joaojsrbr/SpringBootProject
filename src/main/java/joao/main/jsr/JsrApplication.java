@@ -10,4 +10,8 @@ public class JsrApplication {
 		SpringApplication.run(JsrApplication.class, args);
 	}
 
+
+
+
+
 }
