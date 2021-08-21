@@ -1,9 +1,10 @@
 package joao.main.jsr.model;
+
 import lombok.*;
 
-
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.ManyToOne;
-
 
 @Getter
 @Setter
@@ -11,13 +12,11 @@ import javax.persistence.ManyToOne;
 @NoArgsConstructor
 @EqualsAndHashCode
 @Builder
-public class Location {
-    private long id;
-
+@Entity
+public class Localidade {
+    @Id
+    private  long id;
     @ManyToOne
-    private AccessLevel accessLevel;
+    private NivelAcesso nivelAcesso;
     private String descricao;
-
-
-
 }

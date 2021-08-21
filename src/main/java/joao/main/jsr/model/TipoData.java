@@ -1,5 +1,9 @@
 package joao.main.jsr.model;
+
 import lombok.*;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
 @Getter
 @Setter
@@ -7,11 +11,9 @@ import lombok.*;
 @NoArgsConstructor
 @EqualsAndHashCode
 @Builder
-public class AccessLevel {
+@Entity
+public class TipoData {
+    @Id
     private long id;
-    private String descricao; 
-
-
-
-
+    private String descricao;
 }

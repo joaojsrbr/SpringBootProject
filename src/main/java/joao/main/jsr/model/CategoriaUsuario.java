@@ -1,5 +1,10 @@
 package joao.main.jsr.model;
+
 import lombok.*;
+import org.hibernate.envers.Audited;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
 @Getter
 @Setter
@@ -7,11 +12,10 @@ import lombok.*;
 @NoArgsConstructor
 @EqualsAndHashCode
 @Builder
-public class WorkDay {
+@Entity
+@Audited
+public class CategoriaUsuario {
+    @Id
     private long id;
     private String descricao;
-
-
-
-
 }

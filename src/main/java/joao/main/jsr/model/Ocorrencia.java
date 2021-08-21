@@ -1,5 +1,9 @@
 package joao.main.jsr.model;
+
 import lombok.*;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
 @Getter
 @Setter
@@ -7,13 +11,10 @@ import lombok.*;
 @NoArgsConstructor
 @EqualsAndHashCode
 @Builder
-public class Occurrence {
+@Entity
+public class Ocorrencia {
+    @Id
     private long id;
     private String nome;
     private String descricao;
-
-
-
-
-
 }

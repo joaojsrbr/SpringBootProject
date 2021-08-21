@@ -32,6 +32,6 @@
 #spring.datasource.username=joaojsrbr
 #spring.datasource.password=123
 #spring.datasource.driver-class-name=org.postgresql.Driver
-#spring.jpa.hibernate.ddl-auto= none
+#spring.jpa.hibernate.ddl-auto= create
 #spring.jpa.properties.hibernate.format_sql=true
 #spring.jpa.show-sql = true

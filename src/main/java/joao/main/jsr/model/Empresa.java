@@ -1,5 +1,10 @@
 package joao.main.jsr.model;
+
 import lombok.*;
+import org.hibernate.envers.Audited;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
 @Getter
 @Setter
@@ -7,8 +12,11 @@ import lombok.*;
 @NoArgsConstructor
 @EqualsAndHashCode
 @Builder
-public class Company {
-    private long id;
+@Entity
+@Audited
+public class Empresa {
+    @Id
+    private Long id;
     private String descricao;
     private String cnpj;
     private String endereco;
@@ -16,7 +24,4 @@ public class Company {
     private String cidade;
     private String estado;
     private String telefone;
-
-
-
 }
