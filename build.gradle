@@ -25,11 +25,16 @@ dependencies {
 	compileOnly 'org.projectlombok:lombok:1.18.20'
 	annotationProcessor 'org.projectlombok:lombok:1.18.20'
 
-	implementation 'com.h2database:h2:1.4.200'
-	implementation group: 'org.postgresql', name: 'postgresql', version: '42.1.4'
-	implementation group: 'io.springfox', name: 'springfox-swagger2', version: '3.0.0'
-	implementation group: 'io.springfox', name: 'springfox-swagger-ui', version: '3.0.0'
-	implementation group: 'io.springfox', name: 'springfox-bean-validators', version: '3.0.0'
+	//implementation 'com.h2database:h2:1.4.200'
+	implementation group: 'org.postgresql', name: 'postgresql', version: '42.2.23.jre7'
+
+
+	implementation group: 'io.springfox', name: 'springfox-swagger2', version: '2.9.2'
+	implementation group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.9.2'
+	implementation group: 'io.springfox', name: 'springfox-bean-validators', version: '2.9.2'
+
+	implementation group: 'joda-time', name: 'joda-time', version: '2.3'
+
 
 	implementation group: 'org.hibernate', name: 'hibernate-envers', version: '5.5.5.Final'
 	implementation group: 'org.hibernate', name: 'hibernate-validator', version: '7.0.1.Final'
@@ -38,8 +43,4 @@ dependencies {
 	testImplementation('org.springframework.boot:spring-boot-starter-test:2.5.3') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
-}
-
-test {
-	useJUnitPlatform()
 }

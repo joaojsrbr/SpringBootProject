@@ -1,5 +1,6 @@
 package joao.main.jsr.model;
 
+import io.swagger.annotations.ApiModelProperty;
 import lombok.*;
 import org.hibernate.envers.Audited;
 
@@ -19,6 +20,8 @@ import javax.persistence.Id;
 public class JornadaTrabalho {
     @Id
     @GeneratedValue
+    @ApiModelProperty(value = "ID")
     private long id;
+    @ApiModelProperty(value = "Tipo De Trabalho")
     private String descricao;
 }

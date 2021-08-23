@@ -1,9 +1,11 @@
 package joao.main.jsr.model;
 
+import io.swagger.annotations.ApiModelProperty;
 import lombok.*;
 import org.hibernate.envers.Audited;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import java.math.BigDecimal;
@@ -28,7 +30,7 @@ public class Usuario {
     @ManyToOne
     private NivelAcesso nivelAcesso;
     @ManyToOne
-    private  JornadaTrabalho jornadaTrabalho;
+    private JornadaTrabalho jornadaTrabalho;
     private BigDecimal tolerancia;
     private LocalDateTime inicioJornada;
     private LocalDateTime finalJornada;
