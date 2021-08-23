@@ -7,5 +7,6 @@ categoriausuario Controller: http://localhost:8082/categoriausuario
 
 nivelacesso Controller: http://localhost:8082/nivelacesso
 
-Server Port:8082
-Profiles.Active:dev2
+Server Port: 8082
+
+Profiles Active: dev2
