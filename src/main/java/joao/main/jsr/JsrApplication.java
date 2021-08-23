@@ -7,7 +7,6 @@ import org.springframework.data.web.config.EnableSpringDataWebSupport;
 
 
 @SpringBootApplication
-@EnableSpringDataWebSupport
 public class JsrApplication {
 
 	public static void main(String[] args) {
