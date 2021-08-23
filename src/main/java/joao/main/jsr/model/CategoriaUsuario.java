@@ -18,7 +18,6 @@ import javax.persistence.Id;
 @Audited
 public class CategoriaUsuario {
     @Id
-    @GeneratedValue
     @ApiModelProperty(value = "ID")
     private long id;
     @ApiModelProperty(value = "Nome")

@@ -18,7 +18,6 @@ import javax.persistence.Id;
 @Audited
 public class NivelAcesso {
     @Id
-    @GeneratedValue
     @ApiModelProperty(value = "ID")
     private long id;
     @ApiModelProperty(value = "nível do acesso que o usuário tem")
